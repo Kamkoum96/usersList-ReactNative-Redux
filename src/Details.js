@@ -13,7 +13,7 @@ import { useNavigation } from "@react-navigation/native";
 
 export default function Details(props) {
   const { item } = props.route.params;
-  console.log(item);
+  //  console.log(item);
   var img = { uri: item.image };
   const nav = useNavigation();
 

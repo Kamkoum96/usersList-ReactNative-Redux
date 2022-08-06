@@ -10,6 +10,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Main from "../main";
 import Details from "../Details";
+import AddUserForm from "../addUserForm";
 export default function NavigationScreen() {
   const Stack = createNativeStackNavigator();
   return (
@@ -22,6 +23,7 @@ export default function NavigationScreen() {
       >
         <Stack.Screen name="Main" component={Main} />
         <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen name="Add" component={AddUserForm} />
       </Stack.Navigator>
     </NavigationContainer>
   );
